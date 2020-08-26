@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1" />
+  <title>Ten Sleep</title>
+  <link rel="stylesheet"
+    href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/next/esri/css/main.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+  <script src="./lib/anime.min.js"></script>
+
+  <script>
+    var locationPath = location.origin + location.pathname.replace(/\/[^\/]+$/, "");
+    window.dojoConfig = {
+      packages: [
+        {
+          name: "lib",
+          location: locationPath + "/lib"
+        },
+        {
+          name: "app",
+          location: locationPath + "/app"
+        }
+      ]
+    };
+  </script>
+  <script src="https://js.arcgis.com/next/"></script>
+  <script>
+    require([
+      'app/main'
+    ], function (main) {
+      main.init();
+    });
+  </script>
+</head>
+
+<body>
+
+  <div id="viewDiv">
+  </div>
+  <div id="loader"><img src="./img/FAVPNG_tochal-mountain-icon_d4adQXwA.png" alt="loading icon"><br>Loading map...</div>
+  <div class="snow">
+    <div class="i-large"></div>
+    <div class="i-medium"></div>
+    <div class="i-small"></div>
+  </div>
+  <div id="menu" class="esri-widget">
+    <h3>Mount Shasta</h3>
+    <p class="credits">Application built with <a href="https://developers.arcgis.com/javascript">ArcGIS for JavaScript</a>.
+      Based on <a href="https://www.esri.com/arcgis-blog/products/js-api-arcgis/3d-gis/low-poly-ski-resort-map-1/">"A low poly ski resort map"</a> by
+      <a href="https://www.esri.com/arcgis-blog/author/afiva/">Arno Fiva</a> and
+      <a href="https://www.esri.com/arcgis-blog/author/raluca_zurich/">Raluca Nicola</a>.
+      Inspired by <a href="https://app.matterhornparadise.ch/en/">Skiguide Zermatt</a>.
+      3D model from Google Poly: <a href="https://poly.google.com/view/6ufSK2nQBc6">Chalet</a>.
+    </p>
+  </div>
+</body>
+
+</html>
