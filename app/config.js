@@ -8,7 +8,7 @@ define([
       exaggerationFactor: 2,
     },
     extent: {
-      "xmin":-13615632.302149551,"ymin":5060666.331675345,"xmax":-13587121.29059922,"ymax":5085126.180726568,
+      "xmin":-13613931.578270286,"ymin":5061430.701958297,"xmax":-13591000.469784763,"ymax":5083750.314217539,
       spatialReference: SpatialReference.WebMercator
     }
   }

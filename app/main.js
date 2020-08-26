@@ -98,11 +98,11 @@ define([
 
             view.popup.autoOpenEnabled = false; //disable popups
             // Create the Editor
-            var editor = new Editor({
-              view: view
-            });
+            //var editor = new Editor({
+            //  view: view
+            //});
             // Add widget to top-right of the view
-            view.ui.add(editor, "top-right");
+            //view.ui.add(editor, "top-right");
 
             watchUtils.whenFalseOnce(view, "updating", function() {
                 document.getElementsByTagName("canvas")[0].style.filter = "opacity(1)";
